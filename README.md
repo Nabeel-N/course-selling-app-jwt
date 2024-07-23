@@ -47,3 +47,45 @@ For this project, we need to create a course selling website similar to the last
   Description: Lists all the courses purchased by the user.
   Input: Headers: { 'Authorization': 'Bearer <your-token>' }
   Output: { purchasedCourses: [ { id: 1, title: 'course title', description: 'course description', price: 100, imageLink: 'https://linktoimage.com', published: true }, ... ] }
+
+
+To run this project locally, follow these steps:
+
+1. Clone the Repository
+Clone the repository to your local machine using the following command:
+
+bash
+Copy code
+git clone https://github.com/Nabeel-N/course-selling-app-jwt.git
+2. Navigate to the Project Directory
+Change to the project directory:
+
+bash
+Copy code
+cd course-selling-app-jwt
+3. Install Dependencies
+Install the necessary dependencies using npm:
+
+bash
+Copy code
+npm install
+4. Set Up Environment Variables
+Create a .env file in the root directory of the project. This file should include the environment variables required by the application. Example .env file content:
+
+php
+Copy code
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-address>/<database>
+PORT=3000
+Replace <username>, <password>, <cluster-address>, and <database> with your actual MongoDB credentials and details.
+
+5. Run the Application
+Start the application using:
+
+bash
+Copy code
+npm start
+Your server will be running at http://localhost:3000.
+
+6. API Documentation
+Refer to the API documentation for details on available routes and how to use them.
+
